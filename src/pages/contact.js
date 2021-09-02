@@ -10,7 +10,7 @@ const contact = () => {
         <section className="contact-page">
           <div className="contact-text-container">
             <h1>Get In Touch</h1>
-            <p>Email - Jesseclind@gmail.com</p>
+            <p>Email - Jesselindphotography@gmail.com</p>
             <SocialLinks />
           </div>
           <div className="contact-form-container">
