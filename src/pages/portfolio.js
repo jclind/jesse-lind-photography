@@ -21,7 +21,6 @@ const portfolio = ({ data }) => {
             const name = item[0]
             const image = item[1]
             const slug = slugify(name, { lower: true })
-            console.log(name, image)
             return (
               <div className="portfolio" key={index}>
                 <GatsbyImage

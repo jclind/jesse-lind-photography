@@ -14,7 +14,6 @@ const setupPortfolios = nodes => {
     const [second] = b
     return first.localeCompare(second)
   })
-  console.log(allPortfolios, newPortfolios)
   return newPortfolios
 }
 

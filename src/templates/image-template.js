@@ -23,10 +23,6 @@ const ImageTemplate = ({ location: { state }, data: { contentfulImage } }) => {
   const { title } = contentfulImage
   const images = state?.images ? state.images : [currImage]
   const pathname = state?.pathname ? state.pathname : "/"
-  console.log(pathname)
-
-  console.log(images)
-  console.log(currImage)
 
   // const currImage = images.find(image => {
   //   return image.id === id
