@@ -9,7 +9,7 @@ const HomeMobile = () => {
         <Logo />
         <div className="mobile-hero">
           <StaticImage
-            src="../assets/images/mobile-home.jpg"
+            src="../assets/images/mobile-home-small.jpg"
             alt="Niagra Falls Ferri"
             layout="fullWidth"
             placeholder="blurred"
