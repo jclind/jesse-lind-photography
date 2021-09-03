@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import HomeMobile from "../components/HomeMobile"
 import HomeDesktop from "../components/HomeDesktop"
 import Seo from "../components/Seo"
+import Footer from "../components/Footer"
 
 export default function Home() {
   const [width, setWidth] = useState(0)
@@ -28,6 +29,7 @@ export default function Home() {
       ) : (
         <HomeMobile />
       )}
+      <Footer />
     </Layout>
   )
 }

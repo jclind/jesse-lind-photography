@@ -5,7 +5,7 @@ import { navigate } from "gatsby"
 const HomeMobile = () => {
   return (
     <div>
-      <main className="page">
+      <main className="page mobile-home-page">
         <Logo />
         <div className="mobile-hero">
           <StaticImage

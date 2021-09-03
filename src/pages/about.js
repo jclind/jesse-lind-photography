@@ -3,6 +3,7 @@ import { navigate } from "gatsby"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/Seo"
+
 import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
