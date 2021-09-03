@@ -3,7 +3,7 @@ import { navigate, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import ImageLayout from "../components/ImageLayout"
 import { BsArrowLeft } from "react-icons/bs"
-import Seo from "../components/SEO"
+import Seo from "../components/Seo"
 
 const PortfolioTemplate = ({ data, pageContext }) => {
   const nodes = data.allContentfulImage.nodes
@@ -15,11 +15,14 @@ const PortfolioTemplate = ({ data, pageContext }) => {
     })
   }
 
-  const pageTitle = pageContext.portfolio
+  // pageTitle to uppercase
+  const pageTitle =
+    pageContext.portfolio.charAt(0).toUpperCase() +
+    pageContext.portfolio.slice(1)
 
   return (
     <Layout>
-      <Seo title={pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1)} />
+      <Seo title={pageTitle} />
       <main className="page portfolio-page">
         <div className="title">
           <BsArrowLeft

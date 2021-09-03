@@ -4,7 +4,7 @@ import Logo from "../components/Logo"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import slugify from "slugify"
-import Seo from "../components/SEO"
+import Seo from "../components/Seo"
 const collections = ({ data }) => {
   const experiences = data.allContentfulExperiences.nodes
 

@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import Logo from "../components/Logo"
 import { graphql } from "gatsby"
 import ImageLayout from "../components/ImageLayout"
-import Seo from "../components/SEO"
+import Seo from "../components/Seo"
 const allPhotos = ({ data }) => {
   const images = data.allContentfulImage.nodes.map(node => {
     return { gatsbyImage: node.image, title: node.title, id: node.id }

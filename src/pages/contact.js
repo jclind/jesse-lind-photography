@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SocialLinks from "../components/SocialLinks"
-import Seo from "../components/SEO"
+import Seo from "../components/Seo"
 const contact = () => {
   return (
     <Layout>

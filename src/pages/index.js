@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Layout from "../components/Layout"
 import HomeMobile from "../components/HomeMobile"
 import HomeDesktop from "../components/HomeDesktop"
-import Seo from "../components/SEO"
+import Seo from "../components/Seo"
 
 export default function Home() {
   const [width, setWidth] = useState(0)

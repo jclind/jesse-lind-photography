@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri"
 import { AiOutlineInfoCircle, AiOutlineClose } from "react-icons/ai"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import Seo from "../components/SEO"
+import Seo from "../components/Seo"
 
 const ImageTemplate = ({ location: { state }, data: { contentfulImage } }) => {
   const [showInfo, setShowInfo] = useState(false)

@@ -6,7 +6,7 @@ import ImageLayout from "../components/ImageLayout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { BsArrowLeft } from "react-icons/bs"
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer"
-import Seo from "../components/SEO"
+import Seo from "../components/Seo"
 const ExperiencesTemplate = ({ data }) => {
   const node = data.contentfulExperiences
   const { contentImages, coverImage } = node

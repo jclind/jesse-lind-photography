@@ -8,9 +8,9 @@ const Seo = ({ description, lang, meta, title }) => {
       query {
         site {
           siteMetadata {
+            author
             title
             description
-            author
           }
         }
       }
