@@ -1,6 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import Logo from "./Logo"
 
 const Navbar = ({ show, setShow }) => {
@@ -22,10 +21,11 @@ const Navbar = ({ show, setShow }) => {
             <h3>home</h3>
           </Link>
           <Link
-            to="/portfolio"
+            to="/portfolio/"
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
+            partiallyActive={true}
           >
             <h3>portfolio</h3>
           </Link>
@@ -34,6 +34,7 @@ const Navbar = ({ show, setShow }) => {
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
+            partiallyActive={true}
           >
             <h3>experiences</h3>
           </Link>
@@ -42,6 +43,7 @@ const Navbar = ({ show, setShow }) => {
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
+            partiallyActive={true}
           >
             <h3>all photos</h3>
           </Link>

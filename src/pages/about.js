@@ -2,7 +2,7 @@ import React from "react"
 import { navigate } from "gatsby"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
@@ -13,7 +13,7 @@ import Logo from "../components/Logo"
 const about = () => {
   return (
     <Layout>
-      <SEO title="About" />
+      <Seo title="About" />
       <main className="page">
         <Logo />
         <section className="about-page">
@@ -69,13 +69,25 @@ const about = () => {
             <span class="">Contact Me</span>
           </button>
           <div className="about-links">
-            <a href="https://www.instagram.com/jclind02/" target="_blank">
+            <a
+              href="https://www.instagram.com/jclind02/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <AiOutlineInstagram className="instagram" />
             </a>
-            <a href="https://github.com/jclind" target="_blank">
+            <a
+              href="https://github.com/jclind"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <AiOutlineGithub className="github" />
             </a>
-            <a href="https://www.linkedin.com/in/jesseclind/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/jesseclind/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <AiOutlineLinkedin className="linkedin" />
             </a>
           </div>

@@ -3,10 +3,11 @@ import { navigate, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import ImageLayout from "../components/ImageLayout"
 import { BsArrowLeft } from "react-icons/bs"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
+
 const PortfolioTemplate = ({ data, pageContext }) => {
   const nodes = data.allContentfulImage.nodes
-  const pageTitle = pageContext.portfolio
+
   let images = []
   if (nodes) {
     images = nodes.map(node => {
@@ -14,9 +15,11 @@ const PortfolioTemplate = ({ data, pageContext }) => {
     })
   }
 
+  const pageTitle = pageContext.portfolio
+
   return (
     <Layout>
-      <SEO title={pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1)} />
+      <Seo title={pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1)} />
       <main className="page portfolio-page">
         <div className="title">
           <BsArrowLeft

@@ -5,15 +5,15 @@ import { Link, graphql } from "gatsby"
 import setupPortfolios from "../utils/setupPortfolios"
 import { GatsbyImage } from "gatsby-plugin-image"
 import slugify from "slugify"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
+
 const portfolio = ({ data }) => {
   const images = data.allContentfulImage.nodes
   const newPortfolios = setupPortfolios(images)
-  // console.log(newPortfolios)
 
   return (
     <Layout>
-      <SEO title="Portfolio" />
+      <Seo title="Portfolio" />
       <main className="page">
         <Logo />
         <section className="portfolios">

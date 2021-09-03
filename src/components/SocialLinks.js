@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useRef } from "react"
 import { FiInstagram, FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi"
 import { FaDiscord } from "react-icons/fa"
 import { SiBuymeacoffee } from "react-icons/si"
@@ -24,6 +24,8 @@ const SocialLinks = () => {
         href="https://www.instagram.com/jclind02/"
         className="link instagram"
         data-tip="Instagram"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <FiInstagram />
       </a>
@@ -31,6 +33,8 @@ const SocialLinks = () => {
         href="https://twitter.com/jclind02"
         className="link twitter"
         data-tip="Twitter"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <FiTwitter />
       </a>
@@ -38,6 +42,8 @@ const SocialLinks = () => {
         href="https://www.linkedin.com/in/jesseclind/"
         className="link linkedin"
         data-tip="Linkedin"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <FiLinkedin />
       </a>
@@ -45,24 +51,32 @@ const SocialLinks = () => {
         href="https://github.com/jclind"
         className="link github"
         data-tip="Github"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <FiGithub />
       </a>
-      <a
+      <div
+        href=""
+        role="button"
         className="link discord"
         data-tip="Copy Discord Code"
         onClick={copyText}
+        onKeyPress={copyText}
+        tabIndex={0}
       >
         <FaDiscord />
         <div className="status" ref={discordIcon}>
           <AiOutlineCheck />
           <span>Copied</span>
         </div>
-      </a>
+      </div>
       <a
         href="https://www.buymeacoffee.com/jesseclind"
         className="link buymeacoffee"
         data-tip="BuyMeACoffee"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <SiBuymeacoffee />
       </a>

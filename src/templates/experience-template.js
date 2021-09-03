@@ -6,15 +6,11 @@ import ImageLayout from "../components/ImageLayout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { BsArrowLeft } from "react-icons/bs"
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
 const ExperiencesTemplate = ({ data }) => {
   const node = data.contentfulExperiences
-  const experienceTitle = node.title
   const { contentImages, coverImage } = node
-  const pathToCoverImage = getImage(coverImage)
-  const description = node.description
-    ? documentToHtmlString(JSON.parse(node.description.raw))
-    : ""
+
   let images = []
   if (contentImages) {
     images = contentImages.map(item => {
@@ -22,10 +18,15 @@ const ExperiencesTemplate = ({ data }) => {
     })
   }
 
-  console.log(images)
+  const experienceTitle = node.title
+  const pathToCoverImage = getImage(coverImage)
+  const description = node.description
+    ? documentToHtmlString(JSON.parse(node.description.raw))
+    : ""
+
   return (
     <Layout>
-      <SEO
+      <Seo
         title={
           experienceTitle.charAt(0).toUpperCase() + experienceTitle.slice(1)
         }

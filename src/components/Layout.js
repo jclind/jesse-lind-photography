@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
       {/* Background dim on navbar open */}
       <div
         onClick={() => setShow(false)}
+        onKeyPress={() => setShow(false)}
         className={show ? "background-blur" : "d-none"}
         style={{ height: "100vh", width: "100%", maxWidth: "100%" }}
       ></div>

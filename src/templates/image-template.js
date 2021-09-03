@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri"
 import { AiOutlineInfoCircle, AiOutlineClose } from "react-icons/ai"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
 
 const ImageTemplate = ({ location: { state }, data: { contentfulImage } }) => {
   const [showInfo, setShowInfo] = useState(false)
@@ -69,7 +69,7 @@ const ImageTemplate = ({ location: { state }, data: { contentfulImage } }) => {
 
   return (
     <main className="image-page" style={{ height: pageHeight }}>
-      <SEO />
+      <Seo title={title} />
       <Link to={pathname} className="close">
         <AiOutlineClose />
       </Link>
@@ -110,12 +110,12 @@ const ImageTemplate = ({ location: { state }, data: { contentfulImage } }) => {
         <p className="description"></p>
         <div className="data">
           <div className="date">
-            <label>Date:</label>
-            <span>{date}</span>
+            <label htmlFor="img-date">Date:</label>
+            <span id="img-date">{date}</span>
           </div>
           <div className="location">
-            <label>Location:</label>
-            <span>{location}</span>
+            <label htmlFor="img-location">Location:</label>
+            <span id="img-location">{location}</span>
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SocialLinks from "../components/SocialLinks"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
 const contact = () => {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <Seo title="Contact" />
       <main className="page">
         <section className="contact-page">
           <div className="contact-text-container">
@@ -21,25 +21,41 @@ const contact = () => {
             >
               <div className="name-fields">
                 <div>
-                  <label>First Name *</label>
-                  <input type="name" name="first-name" required />
+                  <label htmlFor="first-name">First Name *</label>
+                  <input
+                    type="name"
+                    name="first-name"
+                    id="first-name"
+                    required
+                  />
                 </div>
                 <div>
-                  <label>Last Name *</label>
-                  <input type="name" name="last-name" required />
+                  <label htmlFor="last-name">Last Name *</label>
+                  <input type="name" name="last-name" id="last-name" required />
                 </div>
               </div>
               <div>
-                <label>Email *</label>
-                <input type="email" name="email" required />
+                <label htmlFor="email">Email *</label>
+                <input type="email" name="email" id="email" required />
               </div>
               <div>
-                <label>Subject *</label>
-                <input type="text" name="subject" autoComplete="off" required />
+                <label htmlFor="subject">Subject *</label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  autoComplete="off"
+                  required
+                />
               </div>
               <div>
-                <label>Message *</label>
-                <textarea name="message" rows="5" required></textarea>
+                <label htmlFor="message">Message *</label>
+                <textarea
+                  name="message"
+                  rows="5"
+                  id="message"
+                  required
+                ></textarea>
               </div>
               <button type="submit">Submit</button>
             </form>

@@ -4,13 +4,13 @@ import Logo from "../components/Logo"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import slugify from "slugify"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
 const collections = ({ data }) => {
   const experiences = data.allContentfulExperiences.nodes
 
   return (
     <Layout>
-      <SEO title="Experiences" />
+      <Seo title="Experiences" />
       <main className="page experiences-page">
         <Logo />
         <section className="experiences">

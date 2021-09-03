@@ -12,9 +12,9 @@ const setupPortfolios = nodes => {
   const newPortfolios = Object.entries(allPortfolios).sort((a, b) => {
     const [first] = a
     const [second] = b
-    first.localeCompare(second)
+    return first.localeCompare(second)
   })
-
+  console.log(allPortfolios, newPortfolios)
   return newPortfolios
 }
 
