@@ -3,13 +3,25 @@ This page is my personal photography portfolio website. I've always been facinat
 
 ## Installation and Building
 
-### 1. Clone This Repository
+#### 1. Clone This Repository
 `git clone https://github.com/jclind/jesse-lind-photography.git`
-### 2. Install Dependencies
+#### 2. Install Dependencies
 `npm install`
-### 3. Run and Develop
+#### 3. Run and Develop
 `npm start` || `gatsby develop`
-### 4. Build
+#### 4. Build
 `npm run build` || `gatsby build`
 
+## Dev Dependencies
+- [Prettier](https://prettier.io/)
+- [Normalize.css](https://necolas.github.io/normalize.css/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Slugify](https://www.npmjs.com/package/slugify)
+- [Gatsby](https://www.gatsbyjs.com/)
+- [React](https://reactjs.org/)
+- [ReactDOM](https://reactjs.org/docs/react-dom.html) 
+
+## Server and Hosting
+For this application I used [contentful](https://www.contentful.com/) for hosting all of my photos and other necessary data.
+For hosting, I used [netfliy](https://www.netlify.com/)'s continuous hosting with github.
 
