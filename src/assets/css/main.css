@@ -1365,9 +1365,12 @@ footer .copyright a {
 }
 .image-container {
   position: relative;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 .image-page .image {
   max-height: 98vh;
+  width: 100vw;
   max-width: 98vw;
 }
 .image-page .nav-buttons {

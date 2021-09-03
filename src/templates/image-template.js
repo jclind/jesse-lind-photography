@@ -126,7 +126,7 @@ export const query = graphql`
       locationTaken
       title
       image {
-        gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
       }
       id
     }
