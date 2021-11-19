@@ -495,22 +495,23 @@ form > *:last-child {
 /*#########*/
 
 footer {
+  position: absolute;
+  bottom: 1rem;
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 6rem;
+  /* height: 6rem; */
   width: 100%;
-  border-top: 1px solid var(--border-light);
   font-family: Nunito, sans-serif;
   /* background: red; */
 }
 footer div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  text-align: center;
+  text-align: right;
 }
 
 @media screen and (min-width: 992px) {
@@ -527,11 +528,6 @@ footer div {
 }
 
 footer .liscense {
-  /* position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0.8rem;
-  margin: 0 auto; */
   font-size: 0.7rem;
   color: var(--gray-800);
 }
@@ -595,7 +591,8 @@ footer .copyright a {
 }
 @media screen and (min-width: 1200px) {
   .carousel {
-    width: 85%;
+    max-width: 950px;
+    width: 80%;
   }
 }
 
