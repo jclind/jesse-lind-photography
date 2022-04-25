@@ -11,6 +11,8 @@ const portfolio = ({ data }) => {
   const images = data.allContentfulImage.nodes
   const newPortfolios = setupPortfolios(images)
 
+  const genreNames = []
+
   return (
     <Layout>
       <Seo title="Portfolio" />
@@ -18,9 +20,13 @@ const portfolio = ({ data }) => {
         <Logo />
         <section className="portfolios">
           {newPortfolios.map((item, index) => {
-            const name = item[0]
+            const name = item[0].toLowerCase()
+            if (genreNames.findIndex(genreName => genreName === name) !== -1) {
+              return
+            }
             const image = item[1]
             const slug = slugify(name, { lower: true })
+            genreNames.push(name)
             return (
               <div className="portfolio" key={index}>
                 <GatsbyImage
